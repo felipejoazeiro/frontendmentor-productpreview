@@ -1,0 +1,141 @@
+:root{
+    --primary-color: hsl(158, 36%, 37%);
+    --second-color: hsl(30, 38%, 92%);
+
+    --dark-blue-color: hsl(212, 21%, 14%);
+    --dark-gray-color: hsl(228, 12%, 48%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+
+p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 0;
+    margin: 0%;
+    background-color: var(--second-color);
+    font-weight: 500;
+}
+main{
+    display: flex;
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+section.cards{
+    display: grid;
+    grid-template-rows: 110% 110%;
+    margin-top: 2rem;
+    border-radius: 8px;
+    height: 42vh;
+}
+picture{
+    background-image: url('./images/image-product-mobile.jpg');
+    background-size: 100% 100%;
+    border-radius: 8px 8px 0px 0px;
+}
+.card-description{
+    background-color: var(--white-color);
+    border-radius: 0px 0px 8px 8px;
+    text-align: left;
+    padding: 0 1rem 0 1rem;
+}
+.card-item,
+.card-text{
+    color: var(--dark-gray-color);
+}
+
+.card-text{
+    margin-top: -16px;
+}
+.card-item{
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+}
+.card-title{
+    color: var(--dark-blue-color);
+}
+.card-title h1{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: -16px;
+}
+
+.card-prices{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+.discount-price{
+    font-size: 32px;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: "Fraunces", serif;
+}
+.normal-price{
+    margin-left: 2rem;
+    font-size: 12px;
+    font-family: "Fraunces", serif;
+    color: var(--dark-gray-color);
+    text-decoration: line-through ;
+}
+.card-button{
+    
+    width: 80;
+    align-items: center;
+    text-align: center;
+
+}
+.card-button button{
+    width: 80%;
+    height: 2rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+.card-button button img{
+    margin-right: 1rem;
+}
+
+.card-button:hover button{
+    background-color: hsl(158, 36%, 29%);
+}
+
+@media (min-width: 1250px){
+    main{
+        width: 40%;
+        margin-top: 8rem;
+        height: 80%;
+    }
+    section.cards{
+        grid-template-columns: 50% 50%;
+        padding-bottom: 2rem;
+        height: 50vh;
+    }
+
+    .card-description{
+        border-radius: 0px 8px 8px 0;
+        padding-left: 1rem;
+    }
+    .card-title{
+        margin-top: 36px;
+    }
+    picture{
+        background-image: url('./images/image-product-desktop.jpg');
+        background-size: 100% 100%;
+        border-radius: 8px 0px 0px 8px;
+    }
+
+    .card-prices{
+        display: flex;
+        flex-direction: row;
+        margin-top: 4rem;
+        align-items: center;
+    }
+    
+}
