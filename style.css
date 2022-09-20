@@ -42,7 +42,11 @@ picture{
     background-color: var(--white-color);
     border-radius: 0px 0px 8px 8px;
     text-align: left;
-    padding: 0 1rem 0 1rem;
+}
+.card-box{
+    width:80%;
+    margin-top: 2rem;
+    margin-left: 2rem
 }
 .card-item,
 .card-text{
@@ -50,7 +54,8 @@ picture{
 }
 
 .card-text{
-    margin-top: -16px;
+    margin-top: 2rem;
+    font-size: 20px
 }
 .card-item{
     text-transform: uppercase;
@@ -62,13 +67,11 @@ picture{
 .card-title h1{
     font-weight: 700;
     font-size: 2rem;
-    margin-top: -16px;
 }
 
 .card-prices{
     display: flex;
     flex-direction: row;
-    margin-top: 0.5rem;
     align-items: center;
 }
 .discount-price{
@@ -78,22 +81,22 @@ picture{
     font-family: "Fraunces", serif;
 }
 .normal-price{
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 12px;
     font-family: "Fraunces", serif;
     color: var(--dark-gray-color);
     text-decoration: line-through ;
 }
 .card-button{
-    
-    width: 80;
+    width: 100%;
     align-items: center;
     text-align: center;
-
+    margin: auto;
+    margin-top: 2rem;
 }
 .card-button button{
-    width: 80%;
-    height: 2rem;
+    width: 100%;
+    height: 4rem;
     color: var(--white-color);
     background-color: var(--primary-color);
     border-radius: 8px;
@@ -134,8 +137,9 @@ picture{
     .card-prices{
         display: flex;
         flex-direction: row;
-        margin-top: 4rem;
+        margin-top: 2rem;
         align-items: center;
     }
+
     
 }
